@@ -9,8 +9,6 @@
 
 [Хитрый вариант](main.asm)
 
-![Пример вывода](images/result.PNG)
-
 [Нормальный вариант](normal.asm)
 
 ![Пример вывода](images/result.PNG)
