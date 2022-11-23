@@ -2,3 +2,5 @@ DOS_BOX.lnk
 **.exe
 **.obj
 **.com
+**.map
+test.asm
