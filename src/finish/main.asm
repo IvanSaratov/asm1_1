@@ -50,6 +50,10 @@ start:
 		inc SI
 	loop show
 
+	mov AH, 2
+	mov DL, 10		; Сделаем отступ
+	int 21h
+
 	mov AX, 0		; Обнулим счетчик
 	mov CX, len		; Пройдемся ещё раз по массиву и посчитаем сумму элементов
 	mov SI, 0
@@ -58,10 +62,6 @@ start:
 		add AL, array[SI]
 		inc SI
 	loop get_sum
-
-	mov AH, 2
-	mov DL, 10		; Сделаем отступ
-	int 21h
 
 	mov AH, 0		; TODO: Где то тут проблема
 	call print		; Выведем нашу сумму
